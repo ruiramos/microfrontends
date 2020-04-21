@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple MFE</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fefefe;
+      font-family: sans-serif;
+    }
+
+    .main-container {
+      display: flex;
+    }
+
+    .app-wrapper {
+      width: 50%;
+      min-height: 125px;
+      margin:20px;
+      padding: 20px;
+      border: 1px solid gray;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Simple micro-frontends proof of concept</h1>
+  <p class="container-p">This is the container app.</p>
+
+  <div class="main-container">
+    <div id="app-a" class="app-wrapper"></div>
+    <div id="app-b" class="app-wrapper"></div>
+  </div>
+
+
+  <script id="data" type="application/json">
+    {
+      "APP_A_LOCATION": "{{ APP_A_LOCATION }}",
+      "APP_B_LOCATION": "{{ APP_B_LOCATION }}"
+    }
+  </script>
+  <script src="./utils.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

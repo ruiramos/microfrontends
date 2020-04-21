@@ -1,0 +1,20 @@
+{
+  "name": "vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently -n main,appA,appB \"npm run start:main\" \"npm run start:a\" \"npm run start:b\"",
+    "start:main": "cd container-app && npm start",
+    "start:a": "cd app-a && ./start.sh",
+    "start:b": "cd app-b && ./start.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "http-server": "^0.12.1"
+  }
+}

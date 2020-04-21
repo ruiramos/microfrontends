@@ -1,0 +1,19 @@
+{
+  "name": "modern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently -n \"main,appA,appB\" -c \"gray.bgBlue,white.bgMagenta,white.bgGreen\" \"npm run start-main\" \"npm run start-a\" \"npm run start-b\"",
+    "start-main": "cd container-app && npm i && npm run start:dev",
+    "start-a": "cd app-a && npm i && npm run start:lib",
+    "start-b": "cd app-b && npm i && npm run start:lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
