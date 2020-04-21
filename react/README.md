@@ -14,7 +14,7 @@ the container app.
 This example also uses `react-router` to show that the sub-apps would be able
 to be mounted at different routes.
 
-Most of the magic is in ./container-app/src/index.js.
+Most of the magic is in [container-app/src/index.js](./container-app/src/index.js).
 
 # Running locally
 
