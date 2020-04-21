@@ -15,13 +15,13 @@ This example also uses `react-router` to show that the sub-apps would be able
 to be mounted at different routes.
 
 
-Install all the dependencies with:
+Install all the dependencies with: (it will take a while)
 
 ```
 npm run install:all
 ```
 
-The run the 3 apps with:
+Then run the 3 apps with:
 
 ```
 npm start
