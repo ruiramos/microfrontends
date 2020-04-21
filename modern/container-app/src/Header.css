@@ -1,0 +1,17 @@
+.main-app-header {
+  text-align: center;
+}
+
+.main-app-header a {
+  color: fuchsia;
+}
+
+.main-app-header ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-app-header li {
+  margin:10px 0;
+}
+
