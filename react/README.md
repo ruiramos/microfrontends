@@ -16,7 +16,7 @@ to be mounted at different routes.
 
 Most of the magic is in [container-app/src/index.js](./container-app/src/index.js).
 
-# Running locally
+## Running locally
 
 Install all the dependencies with: (it will take a while)
 
@@ -33,7 +33,7 @@ npm start
 The main app will be available at http://localhost:8080, the individual
 previews at http://localhost:8081 and http://localhost:8082.
 
-# TODO
+## TODO
 
 This is just a proof of concept and with many problems left to solve:
 
