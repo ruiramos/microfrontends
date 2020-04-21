@@ -12,7 +12,7 @@ and can use common dependencies as externals, hooking up to the modules bundled 
 the container app.
 
 This example also uses `react-router` to show that the sub-apps would be able
-to be mounted at different route URLs.
+to be mounted at different routes.
 
 
 Install all the dependencies with:
