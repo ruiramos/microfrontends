@@ -32,6 +32,6 @@ previews at http://localhost:8081 and http://localhost:8082.
 
 This is just a proof of concept and with a few problems left to solve:
 
-- [] Doesn't work in production mode due to webpack tree shaking optimizations (I think)
-- [] Requires modules to be named, on the container app webpack config
-- [] Sub-app index is still hardcoded with external dependencies
+- [ ] Doesn't work in production mode due to webpack tree shaking optimizations (I think)
+- [ ] Requires modules to be named, on the container app webpack config
+- [ ] Sub-app index is still hardcoded with external dependencies
