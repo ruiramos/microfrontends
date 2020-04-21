@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install:all": "concurrently -n \"main,appA,appB\" -c \"gray.bgBlue,white.bgMagenta,white.bgGreen\" \"cd container-app && npm i\" \"cd app-a && npm i\" \"cd app-b && npm i\"",
+    "install:all": "npm i && concurrently -n \"main,appA,appB\" -c \"gray.bgBlue,white.bgMagenta,white.bgGreen\" \"cd container-app && npm i\" \"cd app-a && npm i\" \"cd app-b && npm i\"",
     "start": "concurrently -n \"main,appA,appB\" -c \"gray.bgBlue,white.bgMagenta,white.bgGreen\" \"npm run start-main\" \"npm run start-a\" \"npm run start-b\"",
     "start-main": "cd container-app && npm run start:dev",
     "start-a": "cd app-a && npm run start:lib",

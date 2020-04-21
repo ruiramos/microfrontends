@@ -5,7 +5,7 @@ composed at run-time.
 
 Both `app-a` and `app-b` export their main component as a `commonjs2` module
 that the `container-app` consumes. The location of the app's bundles would only
-need to be known at run-time so they could be specified by environment
+need to be known at run-time - they could be specified by environment
 variables so that the main app doesn't need to be rebuilt whenever a new
 version of one of the apps gets released. The "sub-apps" also previewable separately
 and can use common dependencies as externals, hooking up to the modules installed by

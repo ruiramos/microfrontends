@@ -50,13 +50,7 @@ function loadApp(url) {
     });
 }
 
-const AppA = React.lazy(() => {
-  let app = loadApp(data.APP_A_LOCATION).then((r) => {
-    console.log(r);
-    return r;
-  });
-  return app;
-});
+const AppA = React.lazy(() => loadApp(data.APP_A_LOCATION));
 const AppB = React.lazy(() => loadApp(data.APP_B_LOCATION));
 
 ReactDOM.render(
