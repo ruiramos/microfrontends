@@ -8,7 +8,7 @@ that the `container-app` consumes. The location of the app's bundles would only
 need to be known at run-time - they could be specified by environment
 variables so that the main app doesn't need to be rebuilt whenever a new
 version of one of the apps gets released. The "sub-apps" also previewable separately
-and can use common dependencies as externals, hooking up to the modules installed by
+and can use common dependencies as externals, hooking up to the modules bundled on
 the container app.
 
 This example also uses `react-router` to show that the sub-apps would be able
