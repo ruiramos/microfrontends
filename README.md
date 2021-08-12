@@ -10,3 +10,5 @@ Repository with some experiments and POCs of microfrontend architectures.
  - work independently
  - share dependencies (so that common libraries are only sent once)
  - can be mounted in different routes
+
+There's a version using [vanilla JS](./vanilla) and a version with [React](./react).
